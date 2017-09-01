@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x6E-3a-08B">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8nc-9f-lqM">
+            <objects>
+                <viewController id="6M8-cA-QeP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MLa-MC-ZLz"/>
+                        <viewControllerLayoutGuide type="bottom" id="4eJ-KB-dps"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tP5-pf-x98">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mx-Ja-JZS" userLabel="About me">
+                                <rect key="frame" x="145" y="248" width="85" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About me"/>
+                                <connections>
+                                    <action selector="btnOne:" destination="7kF-Wy-pA8" eventType="touchUpInside" id="jCN-W1-c9Q"/>
+                                    <segue destination="Nzc-az-Udi" kind="show" id="IOc-rf-Y4f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6h-Cc-QiT" userLabel="Welcome Button">
+                                <rect key="frame" x="124" y="317" width="126" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Welcome to iOS!"/>
+                                <connections>
+                                    <action selector="btnTwo:" destination="7kF-Wy-pA8" eventType="touchUpInside" id="VAy-jh-hcF"/>
+                                    <segue destination="d73-tC-u0c" kind="presentation" id="L7X-8v-xcx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k51-ct-5aS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luG-Bg-O97" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7kF-Wy-pA8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="648.79999999999995" y="107.49625187406298"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="haQ-nH-C6W">
+            <objects>
+                <navigationController id="d73-tC-u0c" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VyG-aX-Q77">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IBp-Gv-ajz" kind="relationship" relationship="rootViewController" id="QDz-s7-Hjp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w69-1N-Onb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="945"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Og0-7F-Sc1">
+            <objects>
+                <viewController id="IBp-Gv-ajz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a6d-y7-tIP"/>
+                        <viewControllerLayoutGuide type="bottom" id="pH1-m1-7En"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bhm-pY-73q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kd1-iI-EQr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Mpl-1I-zHP">
+                            <connections>
+                                <action selector="doneBtnPressed:" destination="Xvn-5I-bmp" id="stc-zN-Tz9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8V-MH-gqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Xvn-5I-bmp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="945"/>
+        </scene>
+        <!--About the instructor-->
+        <scene sceneID="pDl-uS-r0o">
+            <objects>
+                <viewController id="Nzc-az-Udi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rph-qz-Vru"/>
+                        <viewControllerLayoutGuide type="bottom" id="33E-ed-691"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JtG-Xy-OxX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profile Pic" translatesAutoresizingMaskIntoConstraints="NO" id="IDu-3P-tGE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPr-Qh-5Ju">
+                                <rect key="frame" x="163" y="373" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About the instructor" id="oK9-GG-ILw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7c-bt-dlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1495" y="107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xtu-6I-69b">
+            <objects>
+                <navigationController id="x6E-3a-08B" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bkw-sS-Ill">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6M8-cA-QeP" kind="relationship" relationship="rootViewController" id="WQ7-wR-bOf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJ5-UV-lbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Profile Pic" width="3000" height="2250"/>
+    </resources>
+</document>
